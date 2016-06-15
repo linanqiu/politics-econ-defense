@@ -67,7 +67,7 @@ We can now fetch the data from FRED using `pandas_datareader` and rename the col
 ```python
 fred_data = data.DataReader(name=['GDPCA', 'GDPA', 'CPIAUCNS', 'FYFSD', 'FYFR', 'FYONET', 'A824RE1A156NBEA'], data_source='fred', start=START_DATE, end=END_DATE)
 fred_data = fred_data.resample('AS').first().dropna()
-fred_data.columns = ['gdp_r', 'gdp_n', 'cpi', 'fed_sur', 'fed_rec', 'fed_out', 'g']
+fred_data.columns = ['gdp_r', 'gdp_n', 'cpi', 'fed_sur', 'fed_rec', 'fed_out', 'def_pct_gdp']
 ```
 
 Then, we take a quick look at the kind of data we fetched:
