@@ -5,6 +5,15 @@ The documentation for this data is in `Data Gathering.ipynb`. The documentation 
 For an example of some (very) cursory analysis of the data and some simple
 (and surprisingly enlightening) conclusions, read `Exploratory Analysis.ipynb`.
 
+The format of the documentation and the analysis are IPython Notebooks. These are little web pages which run code, show their results, and store these results in a nice presentable and most importantly **replicable** format. I ran these code using Python 3 with the following packages installed:
+
+- `matplotlib`
+- `pandas`
+- `pandas_datareader`
+- `statsmodels`
+
+You can `pip install <package>` these packages to use them.
+
 ---
 
 ```python
